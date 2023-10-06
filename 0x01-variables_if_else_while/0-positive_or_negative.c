@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio>
 /* more headers goes there */
 /**
  * main - basic function
