@@ -12,11 +12,12 @@ int main(void)
 	for (dig = '0'; dig <= '9'; dig++)
 	{
 		putchar(dig);
-		putchar(',');
 		if (dig != '9')
 		{
+			putchar(',');
 			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
