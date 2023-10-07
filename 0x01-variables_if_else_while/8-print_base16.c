@@ -9,7 +9,7 @@ int main(void)
 {
 	char  hexa;
 
-	for (hexa = 0; hexa <= 16; hexa++)
+	for (hexa = 0; hexa < 16; hexa++)
 	{
 		if (hexa < 10)
 		{
