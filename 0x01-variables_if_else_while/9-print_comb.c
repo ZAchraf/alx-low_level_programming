@@ -13,7 +13,10 @@ int main(void)
 	{
 		putchar(dig);
 		putchar(',');
-		putchar(' ');
+		if (dig != '9')
+		{
+			putchar(' ');
+		}
 	}
 	return (0);
 }
