@@ -16,7 +16,7 @@ int main(void)
 			putchar('0' + hexa);
 		} else
 		{
-			putchar('a' + (hexa - 10)i);
+			putchar('a' + (hexa - 10));
 		}
 	}
 	putchar('\n');
