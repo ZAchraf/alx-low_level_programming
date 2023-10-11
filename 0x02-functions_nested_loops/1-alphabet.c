@@ -1,4 +1,4 @@
-#include "mai.h"
+#include "main.h"
 
 /**
  * print_alphabet - is a function that uses another
