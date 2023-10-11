@@ -11,25 +11,18 @@ int print_last_digit(int n)
 {
 	if (n < 0)
 	{
-		char LD;
+		int LD;
 
-		int m;
-
-		n = n * (-1);
-		m = n % 10;
-		LD = '0' + m;
-		_putchar(LD);
+		LD = -1 * (n % 10);
+		_putchar(LD + '0');
 		return (m);
 	}
 	else
 	{
-		char LD;
+		int LD;
 
-		int m;
-
-		m = n % 10;
-		LD = '0' + m;
-		_putchar(LD);
-		return (m);
+		LD = -1 * (n % 10);
+		_putchar(LD + '0');
+		return (LD);
 	}
 }
