@@ -13,9 +13,11 @@ int print_last_digit(int n)
 	{
 		char LD;
 
+		int m;
+
 		n = n * (-1);
-		n = n % 10;
-		LD = '0' + n;
+		m = n % 10;
+		LD = '0' + m;
 		_putchar(LD);
 		return (LD);
 	}
@@ -23,10 +25,11 @@ int print_last_digit(int n)
 	{
 		char LD;
 
-		n = n % 10;
-		LD = '0' + n;
+		int m;
+
+		m = n % 10;
+		LD = '0' + m;
 		_putchar(LD);
 		return (LD);
 	}
 }
-
