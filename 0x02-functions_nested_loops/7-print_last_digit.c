@@ -19,7 +19,7 @@ int print_last_digit(int n)
 		m = n % 10;
 		LD = '0' + m;
 		_putchar(LD);
-		return (LD);
+		return (m);
 	}
 	else
 	{
@@ -30,6 +30,6 @@ int print_last_digit(int n)
 		m = n % 10;
 		LD = '0' + m;
 		_putchar(LD);
-		return (LD);
+		return (m);
 	}
 }
