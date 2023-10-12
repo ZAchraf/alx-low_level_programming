@@ -12,7 +12,8 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 	i = 0;
 
-/*the variable i is not being incremented*/
+	/* the variable i is not being incremented */
+
 	while (i < 10)
 	{
 		putchar(i);
