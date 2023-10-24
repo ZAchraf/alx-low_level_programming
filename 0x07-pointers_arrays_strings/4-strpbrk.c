@@ -30,3 +30,4 @@ char *_strpbrk(char *s, char *accept)
 		ir++;
 	}
 	return (0);
+}
