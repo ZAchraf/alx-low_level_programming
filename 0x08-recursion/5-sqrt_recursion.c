@@ -12,6 +12,14 @@ int _sqrt_recursion(int n)
 {
 	return (square(n, 1));
 }
+
+/**
+ * square - it finds the square root
+ * @n: int
+ * @v: square root
+ * Return: int
+*/
+
 int square(int n, int v)
 {
 	if (v * v == n)
