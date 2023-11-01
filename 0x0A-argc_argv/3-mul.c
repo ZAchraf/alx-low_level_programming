@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int m;
 
-	m = argv[0] * argv[1];
+	m = argv[1] * argv[2];
 	printf("%d", m);
 	return (0);
 }
