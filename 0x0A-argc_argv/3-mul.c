@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - is the main function
+ * main - multiplies the second and third param
  * @argc: how many argument
  * @argv: contains all the strings
  * Return: Always 0
@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 {
 	int m;
 
-	if (argc < 3)
+	if (argc != 3)
 	{
-		printf("Error");
+		printf("Errori\n");
 		return (1);
 	}
 	else
