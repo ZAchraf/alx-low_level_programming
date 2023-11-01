@@ -11,7 +11,15 @@ int main(int argc, char *argv[])
 {
 	int m;
 
+	if (argc < 3)
+	{
+		printf("Error");
+		return (1);
+	}
+	else
+	{
 	m = argv[1] * argv[2];
 	printf("%d", m);
+	}
 	return (0);
 }
