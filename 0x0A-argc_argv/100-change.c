@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 			{
 				lc += m / c[i];
 				m = m % c[i];
-				if (n % c[i] == 0)
+				if (m % c[i] == 0)
 				{
 					break;
 				}
