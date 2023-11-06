@@ -8,20 +8,13 @@
 
 int _strlen(char *s)
 {
-	if (s == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		int size;
+	int size;
 
-		for (size = 0; s[size] != '\0'; size++)
-		{
-		;
-		}
-		return (size);
+	for (size = 0; s[size] != '\0'; size++)
+	{
+	;
 	}
+	return (size);
 }
 
 /**
@@ -41,7 +34,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = '\0';
 	size1 = _strlen(s1);
-	size2 + _strlen(s2);
+	size2 = _strlen(s2);
 	t = malloc((size1 + size2 + 1) * sizeof(char));
 	if (t == 0)
 		return (0);
