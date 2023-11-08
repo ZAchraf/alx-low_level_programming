@@ -7,7 +7,7 @@
  * @owner: his owner
  * @age: his age
  * Description: Poppy is helping us learn about structure
-*/
+ */
 struct dog
 {
 	char* name;
