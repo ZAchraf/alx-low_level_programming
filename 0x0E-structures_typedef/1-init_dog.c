@@ -2,11 +2,11 @@
 
 /**
  * init_dog - a function that initialize a variable of type struct dog
- * @t: the dog to initialize
+ * @d: the dog to initialize
  * @name: white dog's name
  * @owner: his owner
  * @age: his age
- * Return: nothing
+ * Return: void
 */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
