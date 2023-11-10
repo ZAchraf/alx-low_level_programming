@@ -3,7 +3,7 @@
 /**
  * sum_them_all - a function that adds up numbers
  * @n: the variable or number of args
- * Return: the sum or 0 if  n==0
+ * Return: the sum or 0
 */
 
 int sum_them_all(const unsigned int n, ...)
