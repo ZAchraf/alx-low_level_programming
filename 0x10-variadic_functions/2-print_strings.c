@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		char *sm = va_arg(v, char*);
 
 		printf("%s%s", sm ? sm : "nil",
-				i ? separator : "");
+		i ? (i ? separator : "") : '\n');
 	}
-	va_end (v);
+	va_end(v);
 }
