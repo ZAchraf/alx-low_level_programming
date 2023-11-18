@@ -10,7 +10,6 @@ int _lencal(char *str)
 {
 	int i;
 
-	i = 0;
 	if (str == NULL)
 	{
 		return (0);
