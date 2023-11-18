@@ -29,7 +29,7 @@ int _lencal(char *str)
 
 size_t print_list(const list_t *h)
 {
-	int n_number = 0;
+	int number = 0;
 
 	list_t *printer = NULL;
 
@@ -37,9 +37,9 @@ size_t print_list(const list_t *h)
 	while (printer != NULL)
 	{
 		printf("[%d] %s\n", _lencal(printer->str), printer->str);
-		n_number++;
-		pointer = pointer->next;
+		number++;
+		printer = printer->next;
 	}
-	return (n_number);
+	return (number);
 }
 
