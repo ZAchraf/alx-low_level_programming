@@ -4,7 +4,7 @@
  * Return: number of node in the list
 */
 
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
 	int number = 0;
 
