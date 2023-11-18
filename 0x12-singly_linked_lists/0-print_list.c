@@ -1,6 +1,27 @@
 #include "lists.h"
 
 /**
+ * _lencal - calculates the length of strings
+ * @str: a string
+ * Return: lencal of string
+*/
+
+int _lencal(char *str)
+{
+	int i;
+
+	i = 0;
+	if (str == NULL)
+	{
+		return (0);
+	}
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	;
+	}
+	return (i);
+}
+/**
  * print_list - a function that prints all the elements of a list
  * @h: the first node of the list
  * Return: c the number of nodes in the list
@@ -8,11 +29,6 @@
 
 size_t print_list(const list_t *h)
 {
-	if (h == NULL)
-	{
-		printf("there is no linked list to point at");
-		return (1);
-	}
 	int n_number = 0;
 
 	list_t *printer = NULL;
@@ -20,7 +36,7 @@ size_t print_list(const list_t *h)
 	printer = h;
 	while (printer != NULL)
 	{
-		printf("%s", printer->str);
+		printf("[%d] %s\n", _lencal(printer->str), printer->str);
 		n_number++;
 		pointer = pointer->next;
 	}
