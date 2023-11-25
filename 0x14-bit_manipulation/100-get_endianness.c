@@ -7,7 +7,7 @@
 
 int get_endianness(void)
 {
-	unsigned lon int e;
+	unsigned long int e;
 
 	e = 1;
 
