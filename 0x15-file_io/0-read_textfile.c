@@ -18,13 +18,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	file = open(filename, 0_RDONLY);
+	file = open(filename, O_RDONLY);
 	if (file == -1)
 	{
 		return (0);
 	}
-	b = read(file, &Buffer[0], letters);
-	b = write(STDOUT_FILENO, &Buffer[0], b);
+	b = read(file, Buffer, letters);
+	b = write(STDOUT_FILENO, Buffer, b);
 	close(file);
 	return (b);
 }
