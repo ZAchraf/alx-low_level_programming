@@ -46,11 +46,11 @@ int main(int ac, char **av)
 	}
 	ffd = close(ffd);
 	tfd = close(tfd);
-	if (ffd != 0)
+	if (ffd)
 	{
 		dprintf(STDERR_FILENO, "ERROR: Can't close fd %d\n", ffd), exit(100);
 	}
-	if (tfd != 0)
+	if (tfd)
 	{
 		dprintf(STDERR_FILENO, "ERROR: Can't close fd %d\n", ffd), exit(100);
 	}
