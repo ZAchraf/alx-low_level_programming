@@ -26,33 +26,33 @@ int main(int ac, char **av)
 	ffd = open(av[1], O_RDONLY);
 	if (ffd == -1)
 	{
-		dprintf(STDERR_FILENO, "ERROR: Can't read from file %s\n", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	}
 	tfd = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (tfd == -1)
 	{
-		dprintf(STDERR_FILENO, "ERROR: Can't write to %s\n", av[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 	}
 	while ((b = read(ffd, buffer, BUFFER_SIZE)) > 0)
 	{
 		if (write(tfd, buffer, b) != b)
 		{
-			dprintf(STDERR_FILENO, "ERROR: Can't write to %s\n", av[2]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]), exit(99);
 		}
 	}
 	if (b == -1)
 	{
-		dprintf(STDERR_FILENO, "ERROR: Can't read from file %s\n", av[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]), exit(98);
 	}
 	ffd = close(ffd);
 	tfd = close(tfd);
-	if (ffd)
+	if (ffd != 0)
 	{
-		dprintf(STDERR_FILENO, "ERROR: Can't close fd %d\n", ffd), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ffd), exit(100);
 	}
-	if (tfd)
+	if (tfd != 0)
 	{
-		dprintf(STDERR_FILENO, "ERROR: Can't close fd %d\n", ffd), exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ffd), exit(100);
 	}
 	return (EXIT_SUCCESS);
 }
