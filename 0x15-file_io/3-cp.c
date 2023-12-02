@@ -6,7 +6,7 @@
  * main - main fun
  * @ac: the count of arguments
  * @av: the vector of args
- * Return: 1 or 
+ * Return: 1 or
 */
 
 int main(int ac, char **av)
